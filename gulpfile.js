@@ -40,6 +40,7 @@ gulp.task('copy-js', function() {
 
 //initialize and watch for changes
 gulp.task('default', ['scss', 'minify-css', 'minify-js', 'copy-js'], function () {
+	gulp.watch('src/scss/partials/*.scss', ['scss']);
 	gulp.watch('src/scss/*.scss', ['scss']);
  	gulp.watch('dist/css/sleek-gallery.css', ['minify-css']);
  	gulp.watch('src/js/*sleek-gallery.js', ['minify-js', 'copy-js']);
