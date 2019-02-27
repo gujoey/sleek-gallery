@@ -1,0 +1,15 @@
+.sleek-gallery{
+	width: 100%; 
+	@include imgColumns(3, 0, 0); //default fallback
+	
+	&--5-col{@include imgColumns(5, 0, 0)};
+	&--4-col{@include imgColumns(4, 0, 0)};
+	&--3-col{@include imgColumns(3, 0, 0)};
+	&--2-col{@include imgColumns(2, 0, 0)};
+	&--1-col{@include imgColumns(1, 0, 0)};
+	
+	& img{
+		width: 100% !important;
+		height: auto !important;
+	}
+}

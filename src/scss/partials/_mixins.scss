@@ -1,0 +1,9 @@
+@mixin imgColumns($column, $gap, $lineHeight){
+	-webkit-column-count: $column;
+	-webkit-column-gap: $gap;
+	-moz-column-count: $column;
+	-moz-column-gap: $gap;
+	column-count: $column;
+	column-gap: $gap; 
+	line-height: $lineHeight; 
+}
