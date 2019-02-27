@@ -39,11 +39,11 @@ function lazyLoad(){
 //image layout function
 function columnLayout(amt){
 	console.log(amt);
-	if (amt > 4){
-		console.log("a column layout number bigger than 4 was selected. Please select a number between 1 and 4");
+	if (amt > 5){
+		console.log("a column layout number bigger than 5 was selected. Please select a number between 1 and 5");
 		return
 	}else if (amt < 1){
-		console.log("a column layout number smaller than 1 was selected. Please select a number between 1 and 4");
+		console.log("a column layout number smaller than 1 was selected. Please select a number between 1 and 5");
 		return
 	}
 	
@@ -62,9 +62,9 @@ function randomSize(min, max) {
 }
 
 //run sleek-gallery function
-function runSleekGallery(initObj){
-	if (initObj.lazyLoad){
+function runSleekGallery(obj){
+	if (obj.lazyLoad){
 		lazyLoad();
 	}
-	columnLayout(initObj.columnLayout);
+	columnLayout(obj.columnLayout);
 }
