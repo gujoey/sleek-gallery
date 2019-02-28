@@ -1,5 +1,4 @@
 @mixin imgColumns($column, $gap, $lineHeight){
-	//display: flex;
 	-webkit-column-count: $column;
 	-webkit-column-gap: $gap;
 	-webkit-perspective:1;

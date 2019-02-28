@@ -13,7 +13,7 @@ $.fn.sleekGallery = function(initObj){
 	}else{
 		if (initDefault.lazyLoad === initObj.lazyLoad){
 			init.lazyLoad = initDefault.lazyLoad;
-		}else if(!initObj.lazyLoad){
+		}else if(!initObj.lazyLoad && !initObj.lazyLoad===false){
 			init.lazyLoad = initDefault.lazyLoad;
 		}else{
 			init.lazyLoad = initObj.lazyLoad;
@@ -21,7 +21,7 @@ $.fn.sleekGallery = function(initObj){
 		
 		if (initDefault.columnLayout === initObj.columnLayout){
 			init.columnLayout = initDefault.columnLayout;
-		}else if(!initObj.columnLayout){
+		}else if(!initObj.columnLayout && !initObj.columnLayout===0){
 			init.columnLayout = initDefault.columnLayout;
 		}else{
 			init.columnLayout = initObj.columnLayout;
@@ -33,17 +33,28 @@ $.fn.sleekGallery = function(initObj){
 
 //lazyload function
 function lazyLoad(){
-	console.log("lazyLoad");
+	let sleekGallery = $('#sleek-gallery img');
+	sleekGallery.each(function(){
+		let src = $(this).attr('src');
+		
+		$(this).toggleClass('lazy');
+		$(this).attr('data-src', src);
+		$(this).removeAttr('src');
+	});
+	
+	let lazyLoad = new LazyLoad({
+    	elements_selector: '.lazy'
+	});
 }
 
-//image layout function
+	
+//image column layout function
 function columnLayout(amt){
-	console.log(amt);
 	if (amt > 5){
-		console.log("a column layout number bigger than 5 was selected. Please select a number between 1 and 5");
+		console.error("a column layout number bigger than 5 was selected. Please select a number between 1 and 5");
 		return
 	}else if (amt < 1){
-		console.log("a column layout number smaller than 1 was selected. Please select a number between 1 and 5");
+		console.error("a column layout number smaller than 1 was selected. Please select a number between 1 and 5");
 		return
 	}
 	
@@ -65,6 +76,10 @@ function randomSize(min, max) {
 function runSleekGallery(obj){
 	if (obj.lazyLoad){
 		lazyLoad();
+	}else{
+		$('#sleek-gallery img').each(function(){
+			$(this).toggleClass("loaded");
+		});
 	}
 	columnLayout(obj.columnLayout);
 }

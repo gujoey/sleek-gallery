@@ -4,6 +4,7 @@ body {
 
 .sleek-gallery {
   width: 100%;
+  height: 0;
   -webkit-column-count: 3;
   -webkit-column-gap: 0;
   -webkit-perspective: 1;
@@ -59,5 +60,9 @@ body {
     line-height: 0; }
   .sleek-gallery img {
     display: block;
-    width: 100% !important;
-    height: auto !important; }
+    width: 100% !important; }
+  .sleek-gallery img:not([src]) {
+    visibility: hidden; }
+
+.loaded {
+  height: auto !important; }

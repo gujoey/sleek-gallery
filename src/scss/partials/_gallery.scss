@@ -1,5 +1,8 @@
 .sleek-gallery{
 	width: 100%; 
+	height: 0;
+	//position: relative;
+
 	@include imgColumns(3, 0, 0); //default fallback
 	
 	&--5-col{@include imgColumns(5, 0, 0)};
@@ -11,6 +14,12 @@
 	& img{
 		display: block;
 		width: 100% !important;
-		height: auto !important;
 	}
+	img:not([src]) {
+    	visibility: hidden;
+	}
+}
+
+.loaded{
+	height: auto !important;
 }
