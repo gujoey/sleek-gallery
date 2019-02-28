@@ -25,7 +25,7 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```
 **NB:** It's important that the script structure is the same as above.
 
-You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular js and css files in addition to minified files. It's recomended that you use the minified files.
+You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular js and css files in addition to minified versions of the files. It's recomended that you use the minified versions.
 
 # Options
 
