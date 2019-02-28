@@ -2,4 +2,4 @@
 
 [Getting started](https://github.com/gujoey/sleek-gallery#getting-started)
 ***
-#Getting started
+# Getting started
