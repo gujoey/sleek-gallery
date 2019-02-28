@@ -1,9 +1,5 @@
 .sleek-gallery{
 	width: 100%; 
-	//height: 0;
-	//position: relative;
-
-	//@include imgColumns(3, 0, 0); //default fallback
 	
 	&--5-col{@include imgColumns(5, 0, 0); @include mediaQuery(5);}
 	&--4-col{@include imgColumns(4, 0, 0); @include mediaQuery(4);}
