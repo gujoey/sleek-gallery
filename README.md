@@ -6,7 +6,7 @@
 In order to use the plugin you will need to add **jQuery.js**, **lazyload.js** and **sleek-gallery.js** to your html file.
 
 You can use the links provided below to get **jQuery.js** and **lazyload.js**
-```javascript
+```html
 //jQuery.js
 <script 
 	src="https://code.jquery.com/jquery-3.3.1.min.js" 
