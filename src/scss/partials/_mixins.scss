@@ -8,3 +8,50 @@
 	column-gap: $gap; 
 	line-height: $lineHeight; 
 }
+
+
+@mixin mediaQuery($columns){
+	@media only screen and (min-width:0px) and (max-width: $break-xs){
+		@if $columns == 5 {
+		  @include imgColumns(1, 0, 0);
+		}
+		@if $columns == 4 {
+		  @include imgColumns(1, 0, 0);
+		}
+		@if $columns == 3 {
+		  @include imgColumns(1, 0, 0);
+		}
+		@if $columns == 2 {
+		  @include imgColumns(1, 0, 0);
+		}
+	}
+	@media only screen and (min-width: $break-xs) and (max-width: $break-sm){
+		@if $columns == 5 {
+		  @include imgColumns(2, 0, 0);
+		}
+		@if $columns == 4 {
+		  @include imgColumns(2, 0, 0);
+		}
+		@if $columns ==  3{
+		  @include imgColumns(2, 0, 0);
+		}
+	}
+	@media only screen and (min-width: $break-sm) and (max-width: $break-md){
+		@if $columns == 5 {
+		  @include imgColumns(3, 0, 0);
+		}
+		@if $columns == 4 {
+		  @include imgColumns(3, 0, 0);
+		}
+	}
+	@media only screen and (min-width: $break-md) and (max-width: $break-lg){
+		@if $columns == 5 {
+		  @include imgColumns(4, 0, 0);
+		}
+	}
+	@media only screen and (min-width: $break-lg){
+		@if $columns == 5 {
+		  @include imgColumns(5, 0, 0);
+		}
+	}
+}

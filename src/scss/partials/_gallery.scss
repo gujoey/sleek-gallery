@@ -1,15 +1,15 @@
 .sleek-gallery{
 	width: 100%; 
-	height: 0;
+	//height: 0;
 	//position: relative;
 
-	@include imgColumns(3, 0, 0); //default fallback
+	//@include imgColumns(3, 0, 0); //default fallback
 	
-	&--5-col{@include imgColumns(5, 0, 0)};
-	&--4-col{@include imgColumns(4, 0, 0)};
-	&--3-col{@include imgColumns(3, 0, 0)};
-	&--2-col{@include imgColumns(2, 0, 0)};
-	&--1-col{@include imgColumns(1, 0, 0)};
+	&--5-col{@include imgColumns(5, 0, 0); @include mediaQuery(5);}
+	&--4-col{@include imgColumns(4, 0, 0); @include mediaQuery(4);}
+	&--3-col{@include imgColumns(3, 0, 0); @include mediaQuery(3);}
+	&--2-col{@include imgColumns(2, 0, 0); @include mediaQuery(2);}
+	&--1-col{@include imgColumns(1, 0, 0);}
 	
 	& img{
 		display: block;
