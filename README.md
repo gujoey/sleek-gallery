@@ -3,7 +3,7 @@
 [Getting started](#getting-started) | [Options](#goptions) | [Demo](#demo) | [Features](#features) | [Browser compability](#browser-compability)
 ***
 # Getting started
-In order to use the plugin you will need to add **jQuery.js**, **lazyload.js** and **sleek-gallery.js** to your html file.
+In order to use the plugin you will need to add **jQuery.js**, **lazyload.js** and **sleek-gallery.js** as well as **sleek-gallery.css** to your html file.
 
 You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```html
@@ -18,12 +18,14 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.2/dist/lazyload.min.js"></script>
 
 <!--sleek-gallery.js-->
-<script src="../dist/js/sleek-gallery.js"></script>
+<script src="dist/js/sleek-gallery.min.js"></script>
 
 <!--your own script-->
 <script src="script.js"></script>
 ```
-**NB:** It's important that the script structure is the same as above
+**NB:** It's important that the script structure is the same as above.
+
+You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular js and css files in addition to minified files. It's recomended that you use the minified files.
 
 # Options
 
