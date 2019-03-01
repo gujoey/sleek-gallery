@@ -113,12 +113,12 @@ In the demos below, lazyLoad is set to `true`
 - [5 column layout](https://sleek.ogujord.no/five-col/)
 
 # Features
-The plugin comes with these features:
+**The plugin comes with these features:**
 - lazyLoad
 - resposive images
 - randomize image size
 
-Features to come in the future:
+**Features to come in the future:**
 - image borders
 - image margins
 - hover options
