@@ -129,8 +129,8 @@ To see which browser supports the sleek-gallery pluign see [browser compability]
 
 
 # Browser compability
-|fucntion        |IE  11         |Edge  18       | Firefox  64|Safari  ≤11 12|Opera  57|Chrome  71|iOS  ≤10 11 12|Android  ≤3 4|
-| -------------  |:-------------:| -------------:|:----------:|:-----------:|:------:|:-------:|:-----------:|:----------:|
+|fucntion        |IE  11         |Edge <br/> 18       | Firefox  64|Safari  ≤11 12|Opera  57|Chrome  71|iOS  ≤10 11 12|Android  ≤3 4|
+|:--------------:|:-------------:|:-------------:|:----------:|:------------:|:------:|:-------:|:-----------:|:----------:|
 |lazyLoad        | ❌            | ✅            | ✅        |❌           |❌     |✅       |❌          |✅          |
 |sleek-gallery	 | ✅            | ✅           | ✅         |✅          |✅      |✅       |✅          |✅          |
 
