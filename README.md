@@ -101,11 +101,11 @@ $(document).ready(function() {
 
 # Demo
 In the demos below, lazyLoad is set to `true`
-[1 column layout](https://sleek.ogujord.no/one-col/)
-[2 column layout](https://sleek.ogujord.no/two-col/)
-[3 column layout](https://sleek.ogujord.no/three-col/)
-[4 column layout](https://sleek.ogujord.no/four-col/)
-[5 column layout](https://sleek.ogujord.no/five-col/)
+- [1 column layout](https://sleek.ogujord.no/one-col/)
+- [2 column layout](https://sleek.ogujord.no/two-col/)
+- [3 column layout](https://sleek.ogujord.no/three-col/)
+- [4 column layout](https://sleek.ogujord.no/four-col/)
+- [5 column layout](https://sleek.ogujord.no/five-col/)
 
 # Features
 
