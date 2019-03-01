@@ -57,11 +57,11 @@ By default the plugin is set to a **three column layout** with **lazyload** set 
 
 Since the plugin is responsice **responsive**, there  will be breakpoints where the plugin might change the the column layout.
 **break points**
-- 0px to 376px | 1 column layout
-- 376px to 415px | 2 column layout 
-- 415px to 769px | 3 column layout
-- 769px to 1081px | 4 column layout 
-- >1081px | 5 column layout
+- >0px to 376px | 1 column layout
+- >376px to 415px | 2 column layout 
+- >415px to 769px | 3 column layout
+- >769px to 1081px | 4 column layout 
+- >above 1081px | 5 column layout
 
 # Options
 
