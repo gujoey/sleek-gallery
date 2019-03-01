@@ -132,7 +132,7 @@ To see which browser supports the sleek-gallery pluign see [browser compability]
 |fucntion          |IE<br/>11         |Edge<br/>18       | Firefox<br/> 64|Safari<br/>≤11 12|Opera<br/>57|Chrome<br/>71|iOS<br/>≤10 11 12|Android<br/>≤3 4|
 |:----------------:|:-------------:|:-------------:|:----------:|:------------:|:------:|:-------:|:-----------:|:----------:|
 |**lazyLoad**      | ❌            | ✅            | ✅        |❌           |❌     |✅       |❌          |✅          |
-|**sleek-gallery** | ✅            | ✅           | ✅         |✅          |✅      |✅       |✅          |✅          |
+|**sleek-gallery**<br/>(without lazyload) | ✅            | ✅           | ✅         |✅          |✅      |✅       |✅          |✅          |
 
 [lazyload](https://github.com/verlok/lazyload) uses the [Intersection Observer API
 ](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to lazy load the images. Not all browsers support this yet. If the browser doesn't supprt Intersection Observer API, lazyLoad will automatically be turned off.
