@@ -9,7 +9,8 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```html
 <html>
 	<head>
-		<link rel="stylesheet" href="../dist/css/sleek-gallery.css">
+		<!--sleek-gallery.min.css-->
+		<link rel="stylesheet" href="dist/css/sleek-gallery.min.css">
 	</head>
 	<body>
 		<!--jQuery.js-->
@@ -22,7 +23,7 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 		<!--lazyload.js-->
 		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.2/dist/lazyload.min.js"></script>
 
-		<!--sleek-gallery.js-->
+		<!--sleek-gallery-min.js-->
 		<script src="dist/js/sleek-gallery-min.js"></script>
 
 		<!--your own script-->
