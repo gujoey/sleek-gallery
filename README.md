@@ -1,6 +1,6 @@
 **sleek-gallery** is a responsive and eays to set up jQuery gallery plugin that will make your gallery look **sleek**. The plugin also uses [lazyload](https://github.com/verlok/lazyload) which will speed up your webpage load time. New features is cooming soon.
 
-[Getting started](#getting-started) | [Options](#goptions) | [Demo](#demo) | [Features](#features) | [Browser compability](#browser-compability)
+[Getting started](#getting-started) | [Options](#options) | [Demo](#demo) | [Features](#features) | [Browser compability](#browser-compability)
 ***
 # Getting started
 In order to use the plugin you will need to add **jQuery.js**, **lazyload.js** and **sleek-gallery.js** as well as **sleek-gallery.css** to your html file.
@@ -81,6 +81,7 @@ $(document).ready(function() {
 
 **NB:** the columm layout only accepts layouts between 1 and 5.
 
+
 If you only want to change one option than you can add only that option to the object. The second option will then fall back to default.
 
 ```javascript
@@ -91,6 +92,8 @@ $(document).ready(function() {
 });
 ```
 
+
+
 **options**
 ```javascript
 {
@@ -98,6 +101,8 @@ $(document).ready(function() {
 	columnLayout: 4 //integer between 1 and 5
 }
 ```
+
+
 
 # Demo
 In the demos below, lazyLoad is set to `true`
