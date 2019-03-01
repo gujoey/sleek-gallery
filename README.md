@@ -123,13 +123,18 @@ Features to come in the future:
 - image margins
 - hover options
 - load animations
+- lazy load in browsers not supporting Intersection Observer API
 
 To see which browser supports the sleek-gallery pluign see [browser compability](#browser-compability)
 
 
 # Browser compability
-|fucntion        | IE 11         |Edge 18        | Firefox 64 | Safari ≤11 12 | Opera 57 | Chrome 71 | iOS ≤10 11 12 | Android ≤3 4|
-| -------------  |:-------------:| -------------:|:----------:|:-------------:|:--------:|:---------:|:-------------:|:-----------:|
-| lazyLoad       | ❌            | right-aligned | Yes |
-| Resposive	 | col 2 is      | centered      |   $12 |
-|		 | zebra stripes | are neat      |    $1 |
+|fucntion        | IE 11         |Edge 18        | Firefox 64 |Safari ≤11 12|Opera 57|Chrome 71|iOS ≤10 11 12|Android ≤3 4|
+| -------------  |:-------------:| -------------:|:----------:|:-----------:|:------:|:-------:|:-----------:|:----------:|
+|lazyLoad        | ❌            | ✅            | ✅        |❌           |❌     |✅       |❌          |✅          |
+|sleek-gallery	 | ✅            | ✅           | ✅         |✅          |✅      |✅       |✅          |✅          |
+
+[lazyload](https://github.com/verlok/lazyload) uses the [Intersection Observer API
+](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to lazy load the images. Not all browsers support this yet. If the browser doesn't supprt Intersection Observer API, lazyLoad will automatically be turned off.
+
+Support for lazy load in browsers not supporting Intersection Observer API will be a feature that is coming in the future
