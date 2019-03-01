@@ -94,11 +94,11 @@ $(document).ready(function() {
 
 
 
-**options**
+**default options**
 ```javascript
 {
-	lazyLoad: false, //boolean
-	columnLayout: 4 //integer between 1 and 5
+	lazyLoad: true, //boolean
+	columnLayout: 3 //integer between 1 and 5
 }
 ```
 
