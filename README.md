@@ -33,9 +33,25 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```
 **NB:** It's important that the script structure is the same as above and its recomended that you put the scripts in the bottom right before the `</body>` tag.
 
-You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular js and css files in addition to minified versions of the files. It's recomended that you use the minified versions.
+You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular .js and .css files in addition to minified versions of the files. It's recomended that you use the minified versions.
 
-Once 
+Once you have installed the JS and CSS files, you will have to wrap your images insde a  `<div>`  whit the **id** and **class** of **sleek-gallery**
+
+```html
+<div id="sleek-gallery" class="sleek-gallery">
+	<img src="img/sleek-1.jpeg" alt="1">
+	<img src="img/sleek-2.jpg" alt="2">
+	<img src="img/sleek-3.jpeg" alt="3">
+</div>
+```
+
+After you have wrapped your images inside the div, you will have to initialize the plugin in through your own script
+
+```javascript
+$(document).ready(function() {
+	$('#sleek-gallery').sleekGallery();
+});
+```
 
 # Options
 
