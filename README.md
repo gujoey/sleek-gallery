@@ -79,11 +79,11 @@ $(document).ready(function() {
 });
 ```
 
-**NB** the columm layout only accepts layouts between 1 and 5.
+**NB:** the columm layout only accepts layouts between 1 and 5.
 
 If you only want to change one option than you can add only that option to the object. The second option will then fall back to default.
 
-```
+```javascript
 $(document).ready(function() {
 	$('#sleek-gallery').sleekGallery({
 		columnLayout: 4
@@ -92,10 +92,20 @@ $(document).ready(function() {
 ```
 
 **options**
-- > lazyLoad: true //boolean
-- > columnLayout: 1 //integer between 1 and 5
+```javascript
+{
+	lazyLoad: false, //boolean
+	columnLayout: 4 //integer between 1 and 5
+}
+```
 
 # Demo
+In the demos below, lazyLoad is set to `true`
+[1 column layout](https://sleek.ogujord.no/one-col/)
+[2 column layout](https://sleek.ogujord.no/two-col/)
+[3 column layout](https://sleek.ogujord.no/three-col/)
+[4 column layout](https://sleek.ogujord.no/four-col/)
+[5 column layout](https://sleek.ogujord.no/five-col/)
 
 # Features
 
