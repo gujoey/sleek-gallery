@@ -58,16 +58,42 @@ $(document).ready(function() {
 By default the plugin is set to a **three column layout** with **lazyload** set to true. If you would like to customize this, see [options](#goptions).
 
 
-Since the plugin is **responsive**, there  will be breakpoints where the plugin might change the the column layout.
+Since the plugin is **responsive**, there  will be breakpoints where the plugin might change the the column layout dependant on what initial column layout you have chosen.
 
 **break points:**
-- >0px to 376px | 1 column layout
-- >376px to 415px | 2 column layout 
-- >415px to 769px | 3 column layout
-- >769px to 1081px | 4 column layout 
-- >above 1081px | 5 column layout
+- >0px to 376px //1 column layout
+- >376px to 415px //2 column layout 
+- >415px to 769px //3 column layout
+- >769px to 1081px //4 column layout 
+- >above 1081px //5 column layout
 
 # Options
+The default options of the plugin sets lazyloading to `true` and the column layout to `3`. If you want to change this you can do this by adding arguments in the form of an object to the initialization script
+
+```javascript
+$(document).ready(function() {
+	$('#sleek-gallery').sleekGallery({
+		lazyLoad: false,
+		columnLayout: 4
+	});
+});
+```
+
+**NB** the columm layout only accepts layouts between 1 and 5.
+
+If you only want to change one option than you can add only that option to the object. The second option will then fall back to default.
+
+```
+$(document).ready(function() {
+	$('#sleek-gallery').sleekGallery({
+		columnLayout: 4
+	});
+});
+```
+
+**options**
+- > lazyLoad: true //boolean
+- > columnLayout: 1 //integer between 1 and 5
 
 # Demo
 
