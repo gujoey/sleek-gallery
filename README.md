@@ -33,9 +33,9 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```
 **NB:** It's important that the script structure is the same as above and its recomended that you put the scripts in the bottom right before the `</body>` tag.
 
-You will have to download the **sleek-gallery.js** and **sleek-gallery.css** from the **dist** directory in this repository. The files are provided in regular .js and .css files in addition to minified versions of the files. It's recomended that you use the minified versions.
+You will have to download the [sleek-gallery.js](dist/js) and [sleek-gallery.css](dist/css)from the [dist](dist) directory in this repository. The files are provided in regular .js and .css files in addition to minified versions of the files. It's recomended that you use the minified versions.
 
-Once you have installed the JS and CSS files, you will have to wrap your images insde a  `<div>`  whit the **id** and **class** of **sleek-gallery**
+Once you have installed the .js and .css files, you will have to wrap your images insde a  `<div>`  whit the **id** and **class** of **sleek-gallery**
 
 ```html
 <div id="sleek-gallery" class="sleek-gallery">
@@ -52,6 +52,16 @@ $(document).ready(function() {
 	$('#sleek-gallery').sleekGallery();
 });
 ```
+
+By default the plugin is set to a **three column layout** with **lazyload** set to true. If you would like to customize this, see [options](#goptions).
+
+Since the plugin is responsice **responsive**, there  will be breakpoints where the plugin might change the the column layout.
+**break points**
+- 0px to 376px | 1 column layout
+- 376px to 415px | 2 column layout 
+- 415px to 769px | 3 column layout
+- 769px to 1081px | 4 column layout 
+- >1081px | 5 column layout
 
 # Options
 
