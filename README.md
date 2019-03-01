@@ -8,9 +8,9 @@ In order to use the plugin you will need to add **jQuery.js**, **lazyload.js** a
 You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```html
 <html>
-	<style>
+	<head>
 		<link rel="stylesheet" href="../dist/css/sleek-gallery.css">
-	</style>
+	</head>
 	<body>
 		<!--jQuery.js-->
 		<script 
