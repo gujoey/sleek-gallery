@@ -55,7 +55,7 @@ $(document).ready(function() {
 });
 ```
 
-By default the plugin is set to a **three column layout** with **lazyload** set to true. If you would like to customize this, see [options](#goptions).
+By default the plugin is set to a **three column layout** with **lazyload** set to `true`. If you would like to customize this, see [options](#options).
 
 
 Since the plugin is **responsive**, there  will be breakpoints where the plugin might change the the column layout dependant on what initial column layout you have chosen.
