@@ -33,10 +33,10 @@ You can use the links provided below to get **jQuery.js** and **lazyload.js**
 ```
 **NB:** It's important that the script structure is the same as above and its recomended that you put the scripts in the bottom right before the `</body>` tag.
 
-You will have to download the [sleek-gallery.js](dist/js) and [sleek-gallery.css](dist/css)from the [dist](dist) directory in this repository. The files are provided in regular .js and .css files in addition to minified versions of the files. It's recomended that you use the minified versions.
+You will have to download the [sleek-gallery.js](dist/js) and [sleek-gallery.css](dist/css) from the [dist](dist) directory in this repository. The files are provided in regular .js and .css files in addition to minified versions of the files. It's recomended that you use the minified versions.
 
 
-Once you have installed the .js and .css files, you will have to wrap your images insde a  `<div>`  whit the **id** and **class** of **sleek-gallery**
+Once you have installed the .js and .css files, you will have to wrap your images inside a  `<div>`  with the **id** and **class** of **sleek-gallery**
 
 ```html
 <div id="sleek-gallery" class="sleek-gallery">
@@ -113,5 +113,18 @@ In the demos below, lazyLoad is set to `true`
 - [5 column layout](https://sleek.ogujord.no/five-col/)
 
 # Features
+The plugin comes with these features:
+- lazyLoad
+- resposive images
+- randomize image size
+
+Features to come in the future:
+- image borders
+- image margins
+- hover options
+- load animations
+
+To see which browser supports the sleek-gallery pluign see [browser compability](#browser-compability)
+
 
 # Browser compability
